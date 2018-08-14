@@ -12,9 +12,9 @@ The previous work proposes a super-resolution generative adversarial network (SR
 
 
 ### Contributors
-Venkat Raman
-Vishal Hosakere
-Gokul Prasath Nallasami (me)
+Venkat Raman  
+Vishal Hosakere  
+Gokul Prasath Nallasami (me)  
 
 
 ### Reference
