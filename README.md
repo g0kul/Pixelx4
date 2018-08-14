@@ -11,14 +11,49 @@ The previous work proposes a super-resolution generative adversarial network (SR
 </div>
 
 
+### Results
+<div align="center">
+	<img src="readme/results.png" width="80%" height="50%"/>
+</div>
+
+<div align="center">
+	<img src="readme/comp.png" width="80%" height="50%"/>
+</div>
+
+### Dataset
+KAIST dataset [2] consisting pixel-by-pixel RGB and thermal LR image pair are given as input to the modal to produce the HR image. To get visually different images for better training, one out of every 40 images were picked and used for training and testing.
+
+### Run  
+- Prerequisites  
+Please check the reference [1] for obtaining the VGG19 pretrained network weights and for setting up the tensor layer.
+
+- Configuration  
+Modify the image_path in the `config.py` file as follows:
+```python
+config.TRAIN.img_path = "image_folder_path/"
+```
+
+- Training
+
+```bash
+python main.py
+```
+
+- Evaluation
+
+```bash
+python main.py --mode=evaluate 
+```
+
 ### Contributors
-Venkat Raman  
-Vishal Hosakere  
-Gokul Prasath Nallasami (me)  
+* Venkat Raman  
+* Vishal Hosakere  
+* Gokul Prasath Nallasami (me)  
 
 
 ### Reference
 * [1] https://github.com/tensorlayer/srgan
+* [2] https://soonminhwang.github.io/rgbt-ped-detection/data/
 
 
 ### License
