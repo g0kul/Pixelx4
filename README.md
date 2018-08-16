@@ -48,7 +48,7 @@ python main.py --mode=evaluate
 ### Contributors
 * Venkat Raman  
 * Vishal Hosakere  
-* Gokul Prasath Nallasami (me)  
+* Gokul Prasath Nallasami
 
 
 ### Reference
